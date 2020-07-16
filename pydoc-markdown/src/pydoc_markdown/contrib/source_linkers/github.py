@@ -48,6 +48,18 @@ class GitHubSourceLinker(Struct):
   This is a source linker for code on a GitHub repository. It calculates the URL using
   the source filename relative to the repository root (determined from the current working
   directory) and the ``HEAD`` commit's SHA.
+
+  Example:
+
+  ```yml
+  renderer:
+    type: mkdocs
+    markdown:
+      source_linker:
+        type: github
+        repo: NiklasRosenstein/pydoc-markdown
+    # ...
+  ```
   """
 
   #: The Git repository owner and name.

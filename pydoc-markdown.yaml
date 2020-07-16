@@ -66,6 +66,9 @@ renderer:
       - pydoc_markdown.contrib.processors.smart.SmartProcessor.*
       - pydoc_markdown.contrib.processors.sphinx.SphinxProcessor
       - pydoc_markdown.contrib.processors.sphinx.SphinxProcessor.*
+    - title: Source Linkers
+      contents:
+      - pydoc_markdown.contrib.source_linkers.github.GitHubSourceLinker.*
   - title: Renderers
     children:
     - title: Hugo
